@@ -36,6 +36,9 @@ ultraman = Out.find_all('strong')
 for i in ultraman:
     print(i.text)
 ```
+
+[Output]
+
 ```python
 Note:
 Ultra Hero 500/ ウルトラヒーロー５００
