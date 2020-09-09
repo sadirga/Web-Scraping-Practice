@@ -164,33 +164,26 @@ and you can ignore the rest of it.
 
 So, with that in mind, what we need to do next is to get the names and the numbers
 ```python
-ultra_alien = {}
+ultra_alien = {}                        # Prepare 3 empty variable with 1 dictionary and 2 list type
 temp_list = []
-a = ''
-for i in ultraman:
-    temp_list.append(i.text)
-
-no1 = []
-ultra_name = []
-for i in temp_list[2:36]:
-    no1.append(i[:2])
-    ultra_name.append(i[2:])
-
-no2 = []
-alien_name = []
-for i in temp_list[37:110]:
-    no2.append(i[:2])
-    alien_name.append(i[2:])
-    
-x = dict(zip(no1,ultra_name))
-y = dict(zip(no2,alien_name))
-ultra_alien['Ultraman'] = x
-ultra_alien['Monster'] = y
-
 final = []
-final.append(ultra_alien)
-final
+for i in ultraman:                      # Loop every element in variable of ultraman
+    temp_list.append(i.text)            # Append every text in ultraman to temp_list
+
+ultra_name = {}                         # Prepare 2 more empty dict variable
+alien_name = {}
+for i in temp_list[2:36]:               # Loop every element in temp_list starts from index ke 2 - 35 (because thats the text that we need)
+    ultra_name[i[:2]] = i[2:]           # Put the element i with slicing from start till index 1 as keys, then i element from index 2 till end as values
+    for j in temp_list[37:110]:         # Loop exatcly the same as the previous loop, just change the slice from index 37 to 109
+        alien_name[j[:2]] = j[2:]       # Do exactly the same after the first loop
+    
+ultra_alien['Ultraman'] = ultra_name    # Put the variable of dict ultra_name as values and add 'Ultraman' as keys
+ultra_alien['Monster'] = alien_name     # Put the variable of dict alien_name as values and add 'Monster' as keys
+final.append(ultra_alien)               # append to the empty list in final variable 
+print(final)
 ```
+[Output]
+
 ```python
 [{'Ultraman': {'01': ' Ultraman',
    '02': ' Ultra Seven',
