@@ -2,7 +2,7 @@
 
 ## For Practice Only
 
-[Halaman web untuk latihan](http://www.scifijapan.com/articles/2015/10/04/bandai-ultraman-ultra-500-figure-list/)  
+[Website Addres](http://www.scifijapan.com/articles/2015/10/04/bandai-ultraman-ultra-500-figure-list/)  
 ![ss1](/Screenshot_1.png)  
 
 <hr>
