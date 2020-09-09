@@ -7,7 +7,7 @@
 
 <hr>
 
-To start our practice, we need to import BeautifulSoup from bs4 and import request
+To start our practice, we need to `import BeautifulSoup from bs4` and `import request`
 
 ```python
 from bs4 import BeautifulSoup
