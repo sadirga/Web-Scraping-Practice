@@ -40,7 +40,7 @@ for i in ultraman:
 [Output]
 
 ```python
-Note:
+[Note:
 Ultra Hero 500/ ウルトラヒーロー５００
 01 Ultraman
 02 Ultra Seven
@@ -156,7 +156,7 @@ Super Grand King (Spark Doll)
 Tyrant (SDU)
 Zog (Ver. 2)
 Alien Chibull Exceller (Spark Doll)
-Fiveking (SDU)
+Fiveking (SDU)]
 ```
 
 Now you've seen the names of ultraman and monsters are marked with numbers
